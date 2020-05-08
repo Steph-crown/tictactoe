@@ -1,0 +1,111 @@
+.game-board 
+{
+	background-color : rgba(44,44,44,0.5);
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    padding : 3px;
+    gap : 3px;
+    border-radius : 10px;
+    box-shadow : 5px 5px 1px rgb(20,20,20);
+}
+body{background-color : rgb(57,97,115); color : rgb(242,168,29);}
+.players{
+	display : flex;
+	margin : 10px 10px;
+	padding : 0 20px;
+	justify-content : space-around;
+	text-align : center;
+	}
+h3{margin-bottom : 0;}
+.container{
+  display: flex;flex-direction : column;
+  justify-content: center;
+  align-items : center;
+  height : 95%;
+  background-color : rgb(57,97,115);
+}
+html{height : 100%;}
+.box {
+	border-radius : 10px;
+  background-color: rgba(242,168,29);
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(57,97,115);
+  font-size : 250%;
+  font-family : text4;
+  transition : 1s ease;
+ // font-weight : bold;
+//  box-shadow : 5px 5px 2px rgb(90,160,187);
+  transition : 0.1s ease;
+}
+.box:active{
+	box-shadow : 0 0 0;
+	}
+#finalStatus{
+	margin-top : 20px;
+	color : rgb(115,24,16);
+	margin-bottom : 10px;
+	font-size : 140%;
+	}
+h2{
+	text-align : center;
+	font-size : 180%;
+	font-family : text1;
+	}
+h3{
+	font-family : text2;
+	font-size : 120%;
+	}
+@font-face{
+	font-family : text1;
+	src : url(AllDayRain.ttf);
+	}
+@font-face{
+	font-family : text4;
+	src : url(Comfortaa.ttf);
+	}
+@font-face{
+	font-family : text2;
+	src : url(BowBabyFlo.ttf);
+	}
+@font-face{
+	font-family : text3;
+	src : url(bundle.ttf);
+	}
+p{
+	font-family : text3;
+	font-size : 140%;
+	color : rgb(115,24,16);
+	}
+#restart{
+	background-color : rgb(242,168,29);
+	width :  240px;
+	font-size : 130%;
+	text-align : center;
+	padding : 10px 0;
+	border-radius : 10px;
+	border : 1px solid rgb(242,168,29);
+	}
+/*#restart:hover{
+	background-color : white;
+	}*/
+a {
+	color : rgb(57,95,115);
+	text-decoration : none;
+	font-family : text3;
+	}
+@media (min-width : 600px){
+	.game-board{
+		grid-template-rows: 200px 200px 200px;
+		grid-template-columns: 200px 200px 200px;
+		}
+	}
+@media (min-aspect-ratio : 4/3){
+	.game-board{
+		grid-template-rows: 25vh 25vh 25vh;
+		grid-template-columns: 25vh 25vh 25vh;
+		}
+	}
