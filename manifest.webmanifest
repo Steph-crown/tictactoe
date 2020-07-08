@@ -1,0 +1,37 @@
+{
+  "short_name": "Tictactoe",
+  "name": "Tictactoe Game",
+  "icons": [
+    {
+      "src": "/calc1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/calc2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://steph-crown.github.io/tictactoe",
+  "background_color": "#abc",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#123456",
+  "shortcuts": [
+    {
+      "name": "How's weather today?",
+      "short_name": "Today",
+      "description": "View weather information for today",
+      "url": "/today?source=pwa",
+      "icons": [{ "src": "/calc1.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "How's weather tomorrow?",
+      "short_name": "Tomorrow",
+      "description": "View weather information for tomorrow",
+      "url": "/tomorrow?source=pwa",
+      "icons": [{ "src": "/calc2.png", "sizes": "192x192" }]
+    }
+  ]
+}
